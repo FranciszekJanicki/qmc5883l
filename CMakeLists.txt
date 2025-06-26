@@ -5,9 +5,7 @@ target_sources(qmc5883l PRIVATE
 )
 
 target_include_directories(qmc5883l PUBLIC
-)
-
-target_link_libraries(qmc5883l PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 target_compile_options(qmc5883l PUBLIC

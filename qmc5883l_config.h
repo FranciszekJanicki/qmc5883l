@@ -4,7 +4,7 @@
 #include <stddef.h>
 #include <stdint.h>
 
-#define QMC5883L_DEV_ADDRESS 0b0001101;
+#define QMC5883L_SLAVE_ADDRESS 0b0001101;
 #define QMC5883L_TEMP_SCALE 1.0F / 100.0F
 
 typedef float float32_t;

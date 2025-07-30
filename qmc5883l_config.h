@@ -4,6 +4,10 @@
 #include <stddef.h>
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define QMC5883L_SLAVE_ADDRESS 0b0001101;
 #define QMC5883L_TEMP_SCALE 1.0F / 100.0F
 
@@ -90,5 +94,9 @@ inline float32_t qmc5883l_range_to_scale(qmc5883_full_scale_range_t range)
             return 0.0F;
     }
 }
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // QMC5883L_QMC5883L_CONFIG_H

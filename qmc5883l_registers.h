@@ -3,6 +3,10 @@
 
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct {
     int16_t xout : 16;
 } qmc5883l_xout_reg_t;
@@ -45,5 +49,9 @@ typedef struct {
 typedef struct {
     uint8_t chip_id : 8;
 } qmc5883l_chip_id_reg_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // QMC5883L_QMC5883L_REGISTERS_H

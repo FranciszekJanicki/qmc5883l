@@ -4,6 +4,10 @@
 #include "qmc5883l_config.h"
 #include "qmc5883l_registers.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct {
     qmc5883l_config_t config;
     qmc5883l_interface_t interface;
@@ -67,5 +71,9 @@ qmc5883l_err_t qmc5883l_set_sr_period_reg(qmc5883l_t const* qmc5883l,
 
 qmc5883l_err_t qmc5883l_get_chip_id_reg(qmc5883l_t const* qmc5883l,
                                         qmc5883l_chip_id_reg_t* reg);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // QMC5883L_QMC5883L_H
